@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B TEN Café - Street Flavors. Premium Vibes.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <div class="coffee-cup"></div>
+      <div class="loader-text">Brewing Excellence...</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">B TEN Café</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reachus.html">Reach Us</a></li>
+          <li>
+            <a href="#"
+              >Order Now &nbsp;<i class="fas fa-external-link-alt"></i
+            ></a>
+          </li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="position: relative">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="hero-bg-video"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 0;
+          pointer-events: none;
+          opacity: 0.45;
+        "
+      >
+        <source src="./assests/home-hero-bg.mp4" type="video/mp4" />
+        <!-- fallback image or background here if needed -->
+      </video>
+      <div class="hero-content">
+        <h1>B TEN Café</h1>
+        <h2>Street Flavors. Premium Vibes.</h2>
+        <p>Serving Fast Food, Chinese & Coffee – Fresh, Fast, Flavorful</p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-primary">
+            <i class="fas fa-utensils"></i> View Menu
+          </a>
+          <a href="#order" class="btn btn-outline">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-map-marker-alt"></i> Locate Us
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+        <p>Scroll to explore</p>
+      </div>
+    </section>
+
+    <!-- Items of the Day -->
+    <section class="items-section" id="menu">
+      <div class="container">
+        <h2 class="section-title fade-in">Items of the Day</h2>
+        <div class="items-grid">
+          <div class="item-card slide-in-left">
+            <div
+              class="item-image"
+              style="
+                background-image: url('./assests/home-SchezwanNoodles.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <i class="fas fa-bowl-food"></i>
+            </div>
+            <div class="item-tags">
+              <span class="tag">Spicy</span>
+              <span class="tag">Best Seller</span>
+            </div>
+            <h3 class="item-name">Schezwan Noodles</h3>
+            <p class="item-description">
+              Perfectly cooked noodles tossed in our signature spicy Schezwan
+              sauce with fresh vegetables and aromatic spices.
+            </p>
+            <div class="item-price">₹149</div>
+          </div>
+
+          <div class="item-card slide-in-right">
+            <div
+              class="item-image"
+              style="
+                background-image: url('./assests/home-CrispyVegBurger.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="item-tags">
+              <span class="tag">Popular</span>
+              <span class="tag">Veg</span>
+            </div>
+            <h3 class="item-name">Crispy Veg Burger</h3>
+            <p class="item-description">
+              Juicy veggie patty with fresh lettuce, tomatoes, and our special
+              sauce in a toasted bun.
+            </p>
+            <div class="item-price">₹99</div>
+          </div>
+
+          <div class="item-card slide-in-left">
+            <div
+              class="item-image"
+              style="
+                background-image: url('./assests/home-CappuccinoDeluxe.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <i class="fas fa-coffee"></i>
+            </div>
+            <div class="item-tags">
+              <span class="tag">Hot</span>
+              <span class="tag">Premium</span>
+            </div>
+            <h3 class="item-name">Cappuccino Deluxe</h3>
+            <p class="item-description">
+              Rich espresso with steamed milk and perfect foam art, made with
+              premium coffee beans.
+            </p>
+            <div class="item-price">₹89</div>
+          </div>
+
+          <div class="item-card slide-in-right">
+            <div
+              class="item-image"
+              style="
+                background-image: url('./assests/home-SoyaChaapTikka.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <i class="fas fa-drumstick-bite"></i>
+            </div>
+            <div class="item-tags">
+              <span class="tag">Grilled</span>
+              <span class="tag">Protein</span>
+            </div>
+            <h3 class="item-name">Soya Chaap Tikka</h3>
+            <p class="item-description">
+              Marinated soya chaap grilled to perfection with traditional spices
+              and served with mint chutney.
+            </p>
+            <div class="item-price">₹179</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why B TEN Section -->
+    <section class="why-section">
+      <div class="container">
+        <div class="why-content">
+          <div class="why-text slide-in-left">
+            <h2>Why B TEN Café?</h2>
+            <div class="why-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Always Fresh & Hygienic</h3>
+                  <p>
+                    We prepare everything fresh daily with the highest hygiene
+                    standards
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>100% Pure Veg</h3>
+                  <p>
+                    Completely vegetarian menu with authentic flavors and
+                    quality ingredients
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Loved by Locals</h3>
+                  <p>
+                    Trusted by our community for consistent taste and excellent
+                    service
+                  </p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="feature-text">
+                  <h3>Order on Zomato & Swiggy</h3>
+                  <p>
+                    Convenient online ordering with fast delivery to your
+                    doorstep
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-grid slide-in-right">
+            <div
+              class="gallery-item"
+              style="
+                background-image: url('./assests/home-about1.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="gallery-overlay">
+                <i class="fas fa-kitchen-set"></i>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              style="
+                background-image: url('./assests/home-about2.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="gallery-overlay">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              style="
+                background-image: url('./assests/home-about3.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="gallery-overlay">
+                <i class="fa-solid fa-users"></i>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              style="
+                background-image: url('./assests/home-about4.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="gallery-overlay">
+                <i class="fas fa-smile"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title fade-in">What Our Customers Say</h2>
+        <div class="testimonials-container">
+          <div class="testimonials-track">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  class="testimonial-avatar"
+                  src="https://i.pravatar.cc/50?u=rajesh"
+                  alt="Rajesh Kumar"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <div class="testimonial-avatar" style="display: none">R</div>
+                <div class="testimonial-info">
+                  <h4>Rajesh Kumar</h4>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                "Amazing food quality and taste! The Schezwan noodles are
+                absolutely delicious. Highly recommended for anyone who loves
+                authentic Chinese food."
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  class="testimonial-avatar"
+                  src="https://i.pravatar.cc/50?u=priya"
+                  alt="Priya Sharma"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <div class="testimonial-avatar" style="display: none">P</div>
+                <div class="testimonial-info">
+                  <h4>Priya Sharma</h4>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                "Great ambiance and excellent service. The coffee is outstanding
+                and the staff is very friendly. Perfect place for hanging out
+                with friends."
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  class="testimonial-avatar"
+                  src="https://i.pravatar.cc/50?u=amit"
+                  alt="Amit Singh"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <div class="testimonial-avatar" style="display: none">A</div>
+                <div class="testimonial-info">
+                  <h4>Amit Singh</h4>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                "Fast delivery and hot food! I order regularly through Zomato
+                and the quality is always consistent. Love their soya chaap!"
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  class="testimonial-avatar"
+                  src="https://i.pravatar.cc/50?u=sunita"
+                  alt="Sunita Patel"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <div class="testimonial-avatar" style="display: none">S</div>
+                <div class="testimonial-info">
+                  <h4>Sunita Patel</h4>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                "Affordable prices with premium taste. The veg burger is my
+                favorite and the portion sizes are generous. Value for money!"
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  class="testimonial-avatar"
+                  src="https://i.pravatar.cc/50?u=rajesh"
+                  alt="Rajesh Kumar"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <div class="testimonial-avatar" style="display: none">R</div>
+                <div class="testimonial-info">
+                  <h4>Rajesh Kumar</h4>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                "Amazing food quality and taste! The Schezwan noodles are
+                absolutely delicious. Highly recommended for anyone who loves
+                authentic Chinese food."
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img
+                  class="testimonial-avatar"
+                  src="https://i.pravatar.cc/50?u=priya"
+                  alt="Priya Sharma"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  "
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+                />
+                <div class="testimonial-avatar" style="display: none">P</div>
+                <div class="testimonial-info">
+                  <h4>Priya Sharma</h4>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                "Great ambiance and excellent service. The coffee is outstanding
+                and the staff is very friendly. Perfect place for hanging out
+                with friends."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in">
+            <div class="stat-number" data-target="9000">0</div>
+            <div class="stat-label">Orders Delivered</div>
+          </div>
+          <div class="stat-item fade-in">
+            <div class="stat-number" data-target="58">0</div>
+            <div class="stat-label">Delicious Items</div>
+          </div>
+          <div class="stat-item fade-in">
+            <div class="stat-number" data-target="4.8">0</div>
+            <div class="stat-label">Avg. Rating</div>
+          </div>
+          <div class="stat-item fade-in">
+            <div class="stat-number" data-target="4000">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="order">
+      <div class="container">
+        <div class="cta-content fade-in">
+          <h2>Ready to Experience B TEN?</h2>
+          <p>
+            Join thousands of satisfied customers who trust us for their
+            favorite meals
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="cta-btn">
+              <i class="fas fa-calendar-alt"></i> Book a Table
+            </a>
+            <a href="#" class="cta-btn">
+              <i class="fas fa-shopping-bag"></i> Take Away
+            </a>
+            <a href="#" class="cta-btn">
+              <i class="fas fa-motorcycle"></i> Order Online
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>B TEN Café</h3>
+            <p>
+              Serving delicious street flavors with premium vibes since day one.
+              Your satisfaction is our priority.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="reachus.html">Contact</a></li>
+              <li><a href="#order">Order Online</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Food Street, Delhi
+              </li>
+              <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+              <li><i class="fas fa-envelope"></i> hello@btencafe.com</li>
+              <li><i class="fas fa-clock"></i> 9 AM - 11 PM Daily</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Order Online</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Zomato</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Swiggy</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-phone"></i> Call for Takeaway</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 B TEN Café. All rights reserved. Made with ❤️ for food
+            lovers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

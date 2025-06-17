@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B TEN Café - Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500&family=Pacifico:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/menu.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">B TEN Café</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reachus.html">Reach Us</a></li>
+            <li>
+              <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="menu-hero">
+      <div class="hero-content">
+        <h1>The Menu – Flavors, Served With Soul</h1>
+        <p>Curated street bites, Chinese treats, quick eats & crafted brews</p>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav" id="categoryNav">
+      <div class="category-container">
+        <div class="category-pills">
+          <a href="#fast-food" class="category-pill" data-section="fast-food">
+            <i class="fas fa-hamburger"></i> Fast Food
+          </a>
+          <a href="#chinese" class="category-pill" data-section="chinese">
+            <i class="fas fa-dragon"></i> Chinese
+          </a>
+          <a href="#beverages" class="category-pill" data-section="beverages">
+            <i class="fas fa-coffee"></i> Beverages
+          </a>
+          <a href="#desserts" class="category-pill" data-section="desserts">
+            <i class="fas fa-ice-cream"></i> Desserts
+          </a>
+          <a href="#combos" class="category-pill" data-section="combos">
+            <i class="fas fa-utensils"></i> Combos
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Donation Banner -->
+    <section id="donate-banner">
+      <div class="donate-container">
+        <h2>Donate a Meal 🍲</h2>
+        <p>
+          For every ₹99 meal you donate, we prepare and serve it to someone in
+          need. Help us spread joy through food.
+        </p>
+        <a href="#donate" class="donate-btn">Contribute Now</a>
+      </div>
+    </section>
+
+    <!-- Fast Food Section -->
+    <section class="menu-section fast-food" id="fast-food">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Fast Food Favorites</h2>
+          <p class="section-subtitle">
+            Quick bites that pack a flavorful punch
+          </p>
+        </div>
+        <div class="menu-grid">
+          <!-- Fast Food Cards -->
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/CrispyCheeseBurger.jpg"
+              alt="Crispy Cheese Burger"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Crispy Cheese Burger</h3>
+              <div class="card-meta">
+                <span class="card-price">₹149</span>
+                <span class="card-calories">• 440 kcal</span>
+              </div>
+              <p class="card-description">
+                Juicy Cheese patty with fresh lettuce, tomatoes, and our
+                signature sauce.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cheese</span>
+                <span class="ingredient-tag">Lettuce</span>
+                <span class="ingredient-tag">Special Sauce</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">HOT</span>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/LoadedFrenchFries.jpg"
+              alt="Loaded French Fries"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Loaded French Fries</h3>
+              <div class="card-meta">
+                <span class="card-price">₹89</span>
+                <span class="card-calories">• 320 kcal</span>
+              </div>
+              <p class="card-description">
+                Golden fries topped with cheese, herbs, and spicy seasonings.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Potato</span>
+                <span class="ingredient-tag">Cheese</span>
+                <span class="ingredient-tag">Herbs</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/MargheritaPizza.jpg"
+              alt="Margherita Pizza"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Margherita Pizza</h3>
+              <div class="card-meta">
+                <span class="card-price">₹199</span>
+                <span class="card-calories">• 510 kcal</span>
+              </div>
+              <p class="card-description">
+                Classic pizza with fresh mozzarella, basil, and tomato sauce.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Mozzarella</span>
+                <span class="ingredient-tag">Basil</span>
+                <span class="ingredient-tag">Tomato</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">VEG</span>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/ClubSandwich.jpg"
+              alt="Club Sandwich"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Club Sandwich</h3>
+              <div class="card-meta">
+                <span class="card-price">₹129</span>
+                <span class="card-calories">• 390 kcal</span>
+              </div>
+              <p class="card-description">
+                Triple-layered sandwich with Cheese, patty, lettuce, and mayo.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cheese</span>
+                <span class="ingredient-tag">Paneer</span>
+                <span class="ingredient-tag">Lettuce</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/PaneerTikkaWrap.jpg"
+              alt="Paneer Tikka Wrap"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Paneer Tikka Wrap</h3>
+              <div class="card-meta">
+                <span class="card-price">₹119</span>
+                <span class="card-calories">• 350 kcal</span>
+              </div>
+              <p class="card-description">
+                Grilled paneer, onions, and peppers wrapped in a soft tortilla
+                with mint chutney.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Paneer</span>
+                <span class="ingredient-tag">Peppers</span>
+                <span class="ingredient-tag">Mint Chutney</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">VEG</span>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/VeggieCheeseToast.jpg"
+              alt="Veggie Cheese Toast"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Veggie Cheese Toast</h3>
+              <div class="card-meta">
+                <span class="card-price">₹79</span>
+                <span class="card-calories">• 280 kcal</span>
+              </div>
+              <p class="card-description">
+                Toasted bread with mixed veggies, cheese, and Italian herbs.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cheese</span>
+                <span class="ingredient-tag">Veggies</span>
+                <span class="ingredient-tag">Herbs</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">VEG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chinese Section -->
+    <section class="menu-section chinese" id="chinese">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Chinese Delights</h2>
+          <p class="section-subtitle">Authentic flavors from the East</p>
+        </div>
+        <div class="menu-grid">
+          <!-- Chinese Cards -->
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/SteamedMomos.jpg"
+              alt="Steamed Momos"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Steamed Momos</h3>
+              <div class="card-meta">
+                <span class="card-price">₹99</span>
+                <span class="card-calories">• 220 kcal</span>
+              </div>
+              <p class="card-description">
+                Hand-folded dumplings filled with seasoned vegetables and served
+                with spicy chutney.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cabbage</span>
+                <span class="ingredient-tag">Carrot</span>
+                <span class="ingredient-tag">Chutney</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/HakkaNoodles.jpg"
+              alt="Hakka Noodles"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Hakka Noodles</h3>
+              <div class="card-meta">
+                <span class="card-price">₹139</span>
+                <span class="card-calories">• 340 kcal</span>
+              </div>
+              <p class="card-description">
+                Stir-fried noodles with vegetables and aromatic Chinese sauces.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Noodles</span>
+                <span class="ingredient-tag">Capsicum</span>
+                <span class="ingredient-tag">Soy Sauce</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">NEW</span>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/SchezwanFriedRice.jpg"
+              alt="Schezwan Fried Rice"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Schezwan Fried Rice</h3>
+              <div class="card-meta">
+                <span class="card-price">₹119</span>
+                <span class="card-calories">• 370 kcal</span>
+              </div>
+              <p class="card-description">
+                Spicy fried rice with mixed vegetables and Schezwan sauce.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Rice</span>
+                <span class="ingredient-tag">Schezwan Sauce</span>
+                <span class="ingredient-tag">Veggies</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/VegManchurian.jpg"
+              alt="Veg Manchurian"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Veg Manchurian</h3>
+              <div class="card-meta">
+                <span class="card-price">₹109</span>
+                <span class="card-calories">• 300 kcal</span>
+              </div>
+              <p class="card-description">
+                Crispy vegetable balls in tangy Manchurian sauce.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cabbage</span>
+                <span class="ingredient-tag">Carrot</span>
+                <span class="ingredient-tag">Manchurian Sauce</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/ChilliPaneer.jpg"
+              alt="Chilli Paneer"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Chilli Paneer</h3>
+              <div class="card-meta">
+                <span class="card-price">₹149</span>
+                <span class="card-calories">• 410 kcal</span>
+              </div>
+              <p class="card-description">
+                Paneer cubes tossed in spicy chilli sauce with peppers and
+                onions.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Paneer</span>
+                <span class="ingredient-tag">Peppers</span>
+                <span class="ingredient-tag">Chilli Sauce</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/VegSpringRolls.jpg"
+              alt="Spring Rolls"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Veg Spring Rolls</h3>
+              <div class="card-meta">
+                <span class="card-price">₹99</span>
+                <span class="card-calories">• 260 kcal</span>
+              </div>
+              <p class="card-description">
+                Crispy rolls stuffed with mixed vegetables and served with sweet
+                chilli dip.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cabbage</span>
+                <span class="ingredient-tag">Carrot</span>
+                <span class="ingredient-tag">Sweet Chilli</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section class="menu-section beverages" id="beverages">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Crafted Beverages</h2>
+          <p class="section-subtitle">Sip, savor, and refresh your soul</p>
+        </div>
+        <div class="menu-grid">
+          <!-- Beverages Cards -->
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/HazelnutLatte.jpg"
+              alt="Hazelnut Latte"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Hazelnut Latte</h3>
+              <div class="card-meta">
+                <span class="card-price">₹149</span>
+                <span class="card-calories">• 180 kcal</span>
+              </div>
+              <p class="card-description">
+                Rich espresso with steamed milk and hazelnut syrup, topped with
+                foam art.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Espresso</span>
+                <span class="ingredient-tag">Hazelnut</span>
+                <span class="ingredient-tag">Milk</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/ColdBrewFloat.jpg"
+              alt="Cold Brew Float"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Cold Brew Float</h3>
+              <div class="card-meta">
+                <span class="card-price">₹179</span>
+                <span class="card-calories">• 210 kcal</span>
+              </div>
+              <p class="card-description">
+                Smooth cold brew coffee with a scoop of vanilla ice cream.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Cold Brew</span>
+                <span class="ingredient-tag">Ice Cream</span>
+                <span class="ingredient-tag">Vanilla</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">COOL</span>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/MangoSmoothie.jpg"
+              alt="Mango Smoothie"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Mango Smoothie</h3>
+              <div class="card-meta">
+                <span class="card-price">₹129</span>
+                <span class="card-calories">• 160 kcal</span>
+              </div>
+              <p class="card-description">
+                Fresh mango blended with yogurt and a hint of cardamom.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Mango</span>
+                <span class="ingredient-tag">Yogurt</span>
+                <span class="ingredient-tag">Cardamom</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/ClassicCappuccino.jpg"
+              alt="Classic Cappuccino"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Classic Cappuccino</h3>
+              <div class="card-meta">
+                <span class="card-price">₹99</span>
+                <span class="card-calories">• 120 kcal</span>
+              </div>
+              <p class="card-description">
+                A perfect balance of espresso, steamed milk, and creamy foam.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Espresso</span>
+                <span class="ingredient-tag">Milk</span>
+                <span class="ingredient-tag">Foam</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/MasalaChai.jpg"
+              alt="Masala Chai"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Masala Chai</h3>
+              <div class="card-meta">
+                <span class="card-price">₹59</span>
+                <span class="card-calories">• 90 kcal</span>
+              </div>
+              <p class="card-description">
+                Traditional Indian tea brewed with aromatic spices and milk.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Tea</span>
+                <span class="ingredient-tag">Spices</span>
+                <span class="ingredient-tag">Milk</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/IcedAmericano.jpg"
+              alt="Iced Americano"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Iced Americano</h3>
+              <div class="card-meta">
+                <span class="card-price">₹89</span>
+                <span class="card-calories">• 15 kcal</span>
+              </div>
+              <p class="card-description">
+                Chilled espresso with water and ice, a refreshing pick-me-up.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Espresso</span>
+                <span class="ingredient-tag">Ice</span>
+                <span class="ingredient-tag">Water</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section class="menu-section desserts" id="desserts">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Sweet Endings</h2>
+          <p class="section-subtitle">Delightful treats to sweeten your day</p>
+        </div>
+        <div class="menu-grid">
+          <!-- Desserts Cards -->
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/ChocolateFudgeCake.jpg"
+              alt="Chocolate Fudge Cake"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Chocolate Fudge Cake</h3>
+              <div class="card-meta">
+                <span class="card-price">₹149</span>
+                <span class="card-calories">• 420 kcal</span>
+              </div>
+              <p class="card-description">
+                Rich, moist chocolate cake with creamy fudge frosting and
+                chocolate shavings.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Chocolate</span>
+                <span class="ingredient-tag">Fudge</span>
+                <span class="ingredient-tag">Cream</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/VanillaBeanSundae.jpg"
+              alt="Vanilla Bean Sundae"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Vanilla Bean Sundae</h3>
+              <div class="card-meta">
+                <span class="card-price">₹99</span>
+                <span class="card-calories">• 250 kcal</span>
+              </div>
+              <p class="card-description">
+                Premium vanilla ice cream with hot chocolate sauce, nuts, and a
+                cherry on top.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Vanilla</span>
+                <span class="ingredient-tag">Chocolate Sauce</span>
+                <span class="ingredient-tag">Nuts</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+            <span class="card-tag">COOL</span>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/WarmBrownieDelight.jpg"
+              alt="Warm Brownie Delight"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Warm Brownie Delight</h3>
+              <div class="card-meta">
+                <span class="card-price">₹129</span>
+                <span class="card-calories">• 330 kcal</span>
+              </div>
+              <p class="card-description">
+                Freshly baked brownie served warm with vanilla ice cream and
+                caramel drizzle.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Brownie</span>
+                <span class="ingredient-tag">Ice Cream</span>
+                <span class="ingredient-tag">Caramel</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/StrawberryPastry.jpg"
+              alt="Strawberry Pastry"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Strawberry Pastry</h3>
+              <div class="card-meta">
+                <span class="card-price">₹79</span>
+                <span class="card-calories">• 210 kcal</span>
+              </div>
+              <p class="card-description">
+                Light sponge cake layered with fresh strawberries and whipped
+                cream.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Strawberry</span>
+                <span class="ingredient-tag">Cream</span>
+                <span class="ingredient-tag">Sponge Cake</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/GulabJamun.jpg"
+              alt="Gulab Jamun"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Gulab Jamun</h3>
+              <div class="card-meta">
+                <span class="card-price">₹69</span>
+                <span class="card-calories">• 180 kcal</span>
+              </div>
+              <p class="card-description">
+                Soft, syrup-soaked dumplings made from khoya and cardamom,
+                served warm.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Khoya</span>
+                <span class="ingredient-tag">Cardamom</span>
+                <span class="ingredient-tag">Syrup</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card enhanced">
+            <img
+              src="./assests/Rasmalai.jpg"
+              alt="Rasmalai"
+              class="card-image"
+              loading="lazy"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Rasmalai</h3>
+              <div class="card-meta">
+                <span class="card-price">₹89</span>
+                <span class="card-calories">• 160 kcal</span>
+              </div>
+              <p class="card-description">
+                Soft paneer balls soaked in sweet, saffron-infused milk and
+                garnished with pistachios.
+              </p>
+              <div class="ingredients-tags">
+                <span class="ingredient-tag">Paneer</span>
+                <span class="ingredient-tag">Saffron Milk</span>
+                <span class="ingredient-tag">Pistachio</span>
+              </div>
+              <div class="card-actions">
+                <button class="heart-btn" onclick="toggleHeart(this)">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button">🛒 Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combos Section -->
+    <section class="menu-section combos" id="combos">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Value Combos</h2>
+          <p class="section-subtitle">Perfect pairings for the perfect meal</p>
+        </div>
+        <div class="combo-card">
+          <div class="combo-images">
+            <img
+              src="./assests/menu-tandoori-combo1.jpg"
+              alt="Tandoori Momo"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-tandoori-combo2.jpg"
+              alt="Tandoori Veg Kabab"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-tandoori-combo3.jpg"
+              alt="Tandoori Chaap"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-tandoori-combo4.jpg"
+              alt="Mint Chutney"
+              class="combo-image"
+              loading="lazy"
+            />
+          </div>
+          <div class="combo-content">
+            <h3 class="combo-title">Tandoori Delight Combo</h3>
+            <p class="combo-description">
+              A fiery platter of tandoori momos, tandoori veg kabab, tandoori
+              chaap, and a side of fresh mint chutney. Perfect for lovers of
+              smoky, spicy flavors!
+            </p>
+            <div class="combo-price">
+              ₹299
+              <span
+                style="
+                  text-decoration: line-through;
+                  color: #999;
+                  font-size: 1rem;
+                "
+                >₹360</span
+              >
+            </div>
+            <button class="card-button">Customize Order</button>
+          </div>
+        </div>
+        <div class="combo-card">
+          <div class="combo-images">
+            <img
+              src="./assests/menu-chinese-combo1.jpg"
+              alt="Steamed Momos"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-chinese-combo2.jpg"
+              alt="Hakka Noodles"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-chinese-combo3.jpg"
+              alt="Spring Rolls"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-chinese-combo4.jpg"
+              alt="Manchurian Gravy"
+              class="combo-image"
+              loading="lazy"
+            />
+          </div>
+          <div class="combo-content">
+            <h3 class="combo-title">Chinese Mania Combo</h3>
+            <p class="combo-description">
+              A feast of steamed momos, hakka noodles, crispy spring rolls, and
+              veg Manchurian gravy. The ultimate Indo-Chinese experience in one
+              meal!
+            </p>
+            <div class="combo-price">
+              ₹269
+              <span
+                style="
+                  text-decoration: line-through;
+                  color: #999;
+                  font-size: 1rem;
+                "
+                >₹330</span
+              >
+            </div>
+            <button class="card-button">Customize Order</button>
+          </div>
+        </div>
+        <div class="combo-card">
+          <div class="combo-images">
+            <img
+              src="./assests/menu-special-combo1.jpg"
+              alt="Margherita Pizza"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-special-combo2.jpg"
+              alt="Crispy Burger"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-special-combo3.jpg"
+              alt="Hazelnut Latte"
+              class="combo-image"
+              loading="lazy"
+            />
+            <img
+              src="./assests/menu-special-combo4.jpg"
+              alt="Chocolate Fudge Cake"
+              class="combo-image"
+              loading="lazy"
+            />
+          </div>
+          <div class="combo-content">
+            <h3 class="combo-title">B TEN Special Combo</h3>
+            <p class="combo-description">
+              Our best-seller combo: margherita pizza, crispy cheese burger,
+              hazelnut latte, and a decadent chocolate fudge cake. The best of B
+              TEN Café on one tray!
+            </p>
+            <div class="combo-price">
+              ₹399
+              <span
+                style="
+                  text-decoration: line-through;
+                  color: #999;
+                  font-size: 1rem;
+                "
+                >₹486</span
+              >
+            </div>
+            <button class="card-button">Customize Order</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food Reviews Section -->
+    <section id="reviews" class="reviews-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Foodies Say</h2>
+          <p class="section-subtitle">Real reviews from our happy customers</p>
+        </div>
+        <div class="review-cards">
+          <div class="review-card">
+            <img
+              src="https://picsum.photos/seed/reviewer1/80"
+              alt="Customer"
+              class="reviewer-photo"
+            />
+            <div class="review-content">
+              <h4 class="reviewer-name">Aarav S.</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Loved the vibe and their Butter Croissants! The café has such a
+                cozy atmosphere."
+              </p>
+              <span class="review-date">May 2025</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <img
+              src="https://picsum.photos/seed/reviewer2/80"
+              alt="Customer"
+              class="reviewer-photo"
+            />
+            <div class="review-content">
+              <h4 class="reviewer-name">Priya M.</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Best momos in town! The Chinese section is absolutely amazing.
+                Will definitely come back."
+              </p>
+              <span class="review-date">June 2025</span>
+            </div>
+          </div>
+          <div class="review-card">
+            <img
+              src="https://picsum.photos/seed/reviewer3/80"
+              alt="Customer"
+              class="reviewer-photo"
+            />
+            <div class="review-content">
+              <h4 class="reviewer-name">Rohan K.</h4>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Great food quality and quick service. The hazelnut latte is a
+                must-try!"
+              </p>
+              <span class="review-date">June 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-cta">
+          <a
+            href="https://g.page/r/your-google-review-link"
+            class="review-btn"
+            target="_blank"
+          >
+            <i class="fas fa-edit"></i> Write a Review
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Note Section -->
+    <section class="menu-note">
+      <p>
+        <i
+          class="fas fa-leaf"
+          style="color: var(--primary); margin-right: 0.5rem"
+        ></i>
+        All our dishes are freshly made. We're a 100% vegetarian kitchen. Let us
+        know if you want it spicy!
+        <i
+          class="fas fa-heart"
+          style="color: var(--primary); margin-left: 0.5rem"
+        ></i>
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="reachus.html">Reach Us</a>
+          <a href="#about">About</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <div class="footer-bottom">
+          <p>&copy; 2025 B TEN Café. Crafted with ❤️ and ☕</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

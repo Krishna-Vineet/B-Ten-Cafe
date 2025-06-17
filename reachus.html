@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reach Us - B TEN Café</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reachus.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">B TEN Café</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reachus.html">Reach Us</a></li>
+            <li>
+              <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="reach-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Let's Brew Something Together</h1>
+          <p>
+            We'd love to hear from you – questions, reservations, feedback or
+            just a warm hello.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Details -->
+      <section id="contact-details">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Find Us</h3>
+            <p>Sec 7<br />Railway Road<br />Gurugram, Haryana</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3>Chat Us</h3>
+            <p>+91 9898989898<br /> Ask!, Suggest!, Share!<br />Always happy to chat!</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <h3>Open Hours</h3>
+            <p>
+              Monday – Sunday<br />10:00 AM – 11:00 PM<br />Your daily coffee
+              companion
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact-form">
+        <div class="form-container">
+          <h2>Drop Us a Message</h2>
+          <p>
+            Whether it's a question, suggestion, or just to say hello – we're
+            all ears!
+          </p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-grid">
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">Send Message ✨</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Map Location -->
+      <section id="map-location">
+        <h2
+          style="
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--accent);
+            margin-bottom: 1rem;
+          "
+        >
+          Visit Our Cozy Corner
+        </h2>
+        <p style="font-size: 1.1rem; opacity: 0.8; margin-bottom: 2rem">
+          Located in the heart of Gurgaon, we're easy to find and even easier to
+          love.
+        </p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.241492515054!2d77.01558617568665!3d28.47227309133982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d191fa873ee49%3A0xb9c0f8e637363fa1!2sB%20Ten%20Cafe%20sector%207!5e0!3m2!1sen!2sin!4v1750147167603!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style="border: 0; border-radius: 20px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-dark-overlay"></div>
+          <a
+            href="https://www.google.com/maps/place/B+Ten+Cafe+sector+7/@28.4722731,77.0155862,17z/data=!3m1!4b1!4m6!3m5!1s0x390d191fa873ee49:0xb9c0f8e637363fa1!8m2!3d28.4722684!4d77.0181611!16s%2Fg%2F11vwpb810b?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
+            <div class="map-overlay">
+              <i class="fa-solid fa-location-dot"></i> &nbsp; B TEN Café
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Careers Section -->
+      <section id="career">
+        <div class="career-wrapper">
+          <h2>Join the B TEN Family</h2>
+          <p class="section-subheading">
+            We're always looking for passionate people who love food, community,
+            and great vibes.
+          </p>
+
+          <div class="job-cards">
+            <div class="job-card">
+              <h3><i class="fas fa-utensils"></i> &nbsp; Chef</h3>
+              <p>
+                Creative cook with a love for café cuisine and innovation.
+                Part-time position available with flexible hours.
+              </p>
+            </div>
+            <div class="job-card">
+              <h3><i class="fas fa-user"></i> &nbsp; Counter Staff</h3>
+              <p>
+                Friendly face to greet and serve customers with warmth. Basic
+                billing knowledge and customer service skills preferred.
+              </p>
+            </div>
+            <div class="job-card">
+              <h3>
+                <i class="fas fa-motorcycle"></i> &nbsp; Delivery Executive
+              </h3>
+              <p>
+                Ensure timely and safe food delivery with a smile. Must have
+                valid driving license and own vehicle.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="mailto:careers.bten@gmail.com?subject=Job Application - B TEN Café&body=Hi! I'm interested in joining the B TEN family. Please find my details below:"
+            class="resume-btn"
+            >Apply Now ✨</a
+          >
+        </div>
+      </section>
+
+      <!-- Social Media Footer -->
+      <section id="socials">
+        <div class="social-wrapper">
+          <h3>Stay Connected</h3>
+          <p>
+            Follow us for daily coffee inspiration, behind-the-scenes moments,
+            and special offers!
+          </p>
+
+          <div class="social-icons">
+            <a
+              href="https://instagram.com/btencafe"
+              target="_blank"
+              aria-label="Follow us on Instagram"
+            >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a
+              href="https://facebook.com/btencafe"
+              target="_blank"
+              aria-label="Like us on Facebook"
+            >
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a
+              href="https://wa.me/919898989898?text=Hi! I'd like to know more about B TEN Café"
+              target="_blank"
+              aria-label="Chat with us on WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i> Chat with Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="reachus.html">Reach Us</a>
+          <a href="#about">About</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <div class="footer-bottom">
+          <p>&copy; 2025 B TEN Café. Crafted with ❤️ and ☕</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+      <h3>✨ Message Sent Successfully!</h3>
+      <p>Thank you for reaching out. We'll get back to you soon!</p>
+    </div>
+
+    <script src="./js/reachus.js"></script>
+  </body>
+</html>
