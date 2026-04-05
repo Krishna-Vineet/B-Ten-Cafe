@@ -6,7 +6,7 @@
   --accent: #c0392b;
   --accent-light: rgba(192, 57, 43, 0.2);
   --card-light: rgba(255, 255, 255, 0.85);
-  --card-dark: rgba(255, 255, 255, 0.05);
+  --card-dark: rgba(0, 0, 0, 0.45);
   --border-light: rgba(0, 0, 0, 0.1);
   --border-dark: rgba(255, 255, 255, 0.1);
   --shadow-light: rgba(0, 0, 0, 0.1);
@@ -208,7 +208,7 @@ body.dark header {
   text-align: center;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid var(--border-light);
-  opacity: 0;
+  opacity: 0.3;
   transform: translateY(30px);
 }
 

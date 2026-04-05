@@ -83,22 +83,19 @@ const countObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const counter = entry.target;
-        const target = parseInt(counter.getAttribute("data-target"));
+        const target = parseFloat(counter.getAttribute("data-target"));
         const increment = target / 100;
         let current = 0;
 
         const timer = setInterval(() => {
           current += increment;
           if (current >= target) {
-            counter.textContent = target.toString().includes(".")
-              ? target
-              : target.toLocaleString();
+            counter.textContent = target.toString() + '+';
             clearInterval(timer);
           } else {
             counter.textContent = Math.floor(current).toLocaleString();
           }
-        }, 20);
-
+        }, 10);
         countObserver.unobserve(counter);
       }
     });

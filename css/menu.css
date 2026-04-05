@@ -374,7 +374,7 @@ body.dark .menu-card:hover {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 .menu-card:hover .card-image {
@@ -556,7 +556,7 @@ body.dark .combos {
   height: 150px;
   object-fit: cover;
   border-radius: var(--card-radius);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
 }
 
 .combo-image:hover {
@@ -737,6 +737,7 @@ body.dark .review-date {
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .review-btn:hover {
